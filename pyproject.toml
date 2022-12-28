@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "drf-msgspec-json-renderer"
+version = "0.2.0"
+description = ""
+authors = ["Novitskii Aleksei <mr.alexeynov95@gmail.com>"]
+readme = "README.md"
+packages = [{include = "drf_msgspec_json"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.2"
+djangorestframework = "^3.14.0"
+msgspec = "^0.11.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

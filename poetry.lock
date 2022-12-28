@@ -1,0 +1,121 @@
+[[package]]
+name = "asgiref"
+version = "3.6.0"
+description = "ASGI specs, helper code, and adapters"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
+
+[[package]]
+name = "django"
+version = "3.2.16"
+description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+asgiref = ">=3.3.2,<4"
+pytz = "*"
+sqlparse = ">=0.2.2"
+
+[package.extras]
+argon2 = ["argon2-cffi (>=19.1.0)"]
+bcrypt = ["bcrypt"]
+
+[[package]]
+name = "djangorestframework"
+version = "3.14.0"
+description = "Web APIs for Django, made easy."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+django = ">=3.0"
+pytz = "*"
+
+[[package]]
+name = "msgspec"
+version = "0.11.0"
+description = "A fast and friendly JSON/MessagePack library, with optional schema validation"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "pytz"
+version = "2022.7"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "sqlparse"
+version = "0.4.3"
+description = "A non-validating SQL parser."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "a06585413cf885414b30b2ce86ac00a8f38dcfc432d089db1046a66af3e56710"
+
+[metadata.files]
+asgiref = [
+    {file = "asgiref-3.6.0-py3-none-any.whl", hash = "sha256:71e68008da809b957b7ee4b43dbccff33d1b23519fb8344e33f049897077afac"},
+    {file = "asgiref-3.6.0.tar.gz", hash = "sha256:9567dfe7bd8d3c8c892227827c41cce860b368104c3431da67a0c5a65a949506"},
+]
+django = [
+    {file = "Django-3.2.16-py3-none-any.whl", hash = "sha256:18ba8efa36b69cfcd4b670d0fa187c6fe7506596f0ababe580e16909bcdec121"},
+    {file = "Django-3.2.16.tar.gz", hash = "sha256:3adc285124244724a394fa9b9839cc8cd116faf7d159554c43ecdaa8cdf0b94d"},
+]
+djangorestframework = [
+    {file = "djangorestframework-3.14.0-py3-none-any.whl", hash = "sha256:eb63f58c9f218e1a7d064d17a70751f528ed4e1d35547fdade9aaf4cd103fd08"},
+    {file = "djangorestframework-3.14.0.tar.gz", hash = "sha256:579a333e6256b09489cbe0a067e66abe55c6595d8926be6b99423786334350c8"},
+]
+msgspec = [
+    {file = "msgspec-0.11.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:cf1dace9e633243e092ff9c8c204d8ffd3e66dfdb5efa02bb4baa4ca66c92093"},
+    {file = "msgspec-0.11.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:4a22d2bbbc3826c8c3aa6a67b97cbf3586a77f32f39fe4ab4c723b6a81e95f58"},
+    {file = "msgspec-0.11.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8ede34b53a203b1569a44f20afb285cf9e1e36165d4f60c8ecd56a1c64294fc0"},
+    {file = "msgspec-0.11.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:661f5098d59ab0695efe9e7abaa5b6988d8d232adacdfd2a2efa5f0a16b4a2e2"},
+    {file = "msgspec-0.11.0-cp310-cp310-musllinux_1_1_aarch64.whl", hash = "sha256:103b5b459a17e3dd9d402e4fa55fda74d6b3ee1d3d83517daf8321961c20c31d"},
+    {file = "msgspec-0.11.0-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:aeef1d2b1a5fca4fb2d0a645c9d9f0ca842829b71e41b7c7f9bae1ce41e7215d"},
+    {file = "msgspec-0.11.0-cp310-cp310-win_amd64.whl", hash = "sha256:a19bca76bff8f7ce557504fd5146ad32393202e8f15a084974428caa19d82851"},
+    {file = "msgspec-0.11.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:0e117549b7594ffcdf4941f24a96611471f6425c0ab872285e3b8a9dd448c747"},
+    {file = "msgspec-0.11.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:9a28aa62a97bc9255e92151b8e2edc1b27a4ee1e74172e88b09329136814bb83"},
+    {file = "msgspec-0.11.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9557e0b4d82a7d7e01ed8ecfaec33c83f1b77cda5f528c844048b8a997db0d15"},
+    {file = "msgspec-0.11.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:743e7d70d69b2e67c9dd560522105250800efa33bb0a18f7ef6724bc8ed9bd9e"},
+    {file = "msgspec-0.11.0-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:9bb71d224524e900c2f5aac10143f830b98300bc693c38aa7e3f21040efa8f9a"},
+    {file = "msgspec-0.11.0-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:e3e233454cdf7cc85321cf41d4cee427065cb7d42de362242d4e98b34d04df5c"},
+    {file = "msgspec-0.11.0-cp311-cp311-win_amd64.whl", hash = "sha256:f7b657890e67d7ad41ae4d3ea2e03653ef184c987bf2497f20d083f9c01ddfc7"},
+    {file = "msgspec-0.11.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:92d22a93c9da4190927d4841c8eb0113ed471af2e7beeba68c77c452932e2710"},
+    {file = "msgspec-0.11.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:772a9965a8760022b75e4c6aa3328377405c382347c3d5365bca7c8bdbbfcfab"},
+    {file = "msgspec-0.11.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:2d7aeae531397ba07869ccb1bcd03db8253322904c0dd311280da588482c7f3a"},
+    {file = "msgspec-0.11.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:17d394272484e269597052eb9b8a4ff0f8f3aa545347de01054eb87faa0e26cb"},
+    {file = "msgspec-0.11.0-cp38-cp38-musllinux_1_1_aarch64.whl", hash = "sha256:49a25dcf6f257010b2bb980d9f3e8b8e3fa4883b6e7af639e45623e100c3b241"},
+    {file = "msgspec-0.11.0-cp38-cp38-musllinux_1_1_x86_64.whl", hash = "sha256:dc8390e58808f137390ab39be33caeead2c0cfa7cba97855e35df63accebb686"},
+    {file = "msgspec-0.11.0-cp38-cp38-win_amd64.whl", hash = "sha256:aa9b3dfde864876144e4b1222a22c46bffcf05c767174a9b8228eee28082b35c"},
+    {file = "msgspec-0.11.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:de50ccf78b8354278390d87527a84cb56a27235d3dac94293413ac82d297bc2d"},
+    {file = "msgspec-0.11.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:97d8c64c31c825b44d60679b781b903caa82f8cf85ac6a2a491146823663161a"},
+    {file = "msgspec-0.11.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d5daca9321daaebce548f1283369c93ad3c66c5441720ef6ba5371e51367c504"},
+    {file = "msgspec-0.11.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cd0834d45a6823987af89c7aeca52df993ce84068f1031b010506fa1dbd865d9"},
+    {file = "msgspec-0.11.0-cp39-cp39-musllinux_1_1_aarch64.whl", hash = "sha256:72b281e75b79f1357282f26ba0e4239328253b124f2fd056edec917a067f5a07"},
+    {file = "msgspec-0.11.0-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:cd661d4df122a956309dc14f6bb638756c7a975bd286f2d1d1acaef0b05be67d"},
+    {file = "msgspec-0.11.0-cp39-cp39-win_amd64.whl", hash = "sha256:ff82e35aad8cb97b86216351b15c49f2a08ae6233973dfe87112036eeaa47bee"},
+    {file = "msgspec-0.11.0.tar.gz", hash = "sha256:b8738afc333d5499dfb349021d89f8d2569b52cd21f729a20e105568136aa52b"},
+]
+pytz = [
+    {file = "pytz-2022.7-py2.py3-none-any.whl", hash = "sha256:93007def75ae22f7cd991c84e02d434876818661f8df9ad5df9e950ff4e52cfd"},
+    {file = "pytz-2022.7.tar.gz", hash = "sha256:7ccfae7b4b2c067464a6733c6261673fdb8fd1be905460396b97a073e9fa683a"},
+]
+sqlparse = [
+    {file = "sqlparse-0.4.3-py3-none-any.whl", hash = "sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34"},
+    {file = "sqlparse-0.4.3.tar.gz", hash = "sha256:69ca804846bb114d2ec380e4360a8a340db83f0ccf3afceeb1404df028f57268"},
+]
